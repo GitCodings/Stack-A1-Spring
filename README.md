@@ -226,7 +226,7 @@ config:
 Maps automatically to:
 
 ```java
-@ConstructorBinding
+@ConstructorBinding // Tells spring to use the constructor rather than setters
 @ConfigurationProperties(prefix = "config")
 public class SpringServiceConfig
 {
