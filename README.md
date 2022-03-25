@@ -220,7 +220,7 @@ You can take custom parameters from your `application.yml` file and map them to 
 
 ```yml
 config:
-  default-hello: "Hello World!"
+  default-hello: "Hello There Client!"
 ``` 
 
 Maps automatically to:
