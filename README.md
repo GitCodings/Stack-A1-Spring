@@ -4,6 +4,7 @@
 - [Creating Endpoints](#creating-endpoints)
 - [Result](#result)
 - [Config](#config)
+- [Autowired](#autowired)
 
 ## Creating An Application
 
@@ -243,3 +244,42 @@ public class SpringServiceConfig
     }
 }
 ``` 
+
+## Autowired
+
+Spring will automatically create instances of classes with specific annotations for you when the application runs. The annotations we will be using in this course that spring will create for us are: `@RestController`, `@ConfigurationProperties`, and `@Component`. When spring creates these instances we can tell spring what this class depends on with the `@Autowired` annotation. For example:
+
+```java
+@RestController
+public class HelloController
+{
+    private final SpringServiceConfig config;
+    
+    @Autowired
+    public HelloController(SpringServiceConfig config)
+    {
+        this.config = config;
+    }
+}
+```
+
+```java
+@ConstructorBinding
+@ConfigurationProperties(prefix = "config")
+public class SpringServiceConfig
+{
+    private final String defaultHello;
+
+    public SpringServiceConfig(String defaultHello)
+    {
+        this.defaultHello = defaultHello;
+    }
+
+    public String getDefaultHello()
+    {
+        return defaultHello;
+    }
+}
+```
+
+Since this `HelloController` has the `@RestController` annotation and `SpringServiceConfig` has the `ConfigurationProperties` annotation, both of these classes will be created automatically, moreover since we marked `HelloController`'s constructor with `@Autowired` spring will be sure to create `SpringServiceConfig` first and "inject" this into the `HelloController` instance automatically when it is created. All the work of managing these instances and the order they are created is done for us, giving us more time to focus on the logic of the application rather that its setup.
