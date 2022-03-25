@@ -222,3 +222,24 @@ You can take custom parameters from your `application.yml` file and map them to 
 config:
   default-hello: "Hello World!"
 ``` 
+
+Maps automatically to:
+
+```java
+@ConstructorBinding
+@ConfigurationProperties(prefix = "config")
+public class SpringServiceConfig
+{
+    private final String defaultHello;
+
+    public SpringServiceConfig(String defaultHello)
+    {
+        this.defaultHello = defaultHello;
+    }
+
+    public String getDefaultHello()
+    {
+        return defaultHello;
+    }
+}
+``` 
