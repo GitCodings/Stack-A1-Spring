@@ -1,5 +1,10 @@
 # CS122B Activity 0 - Spring
 
+[Creating An Application](#creating-an-application)
+[Creating Endpoints](#creating-endpoints)
+[Result](#result)
+[Config](#config)
+
 ## Creating An Application
 
 ```java
@@ -207,3 +212,13 @@ public ResponseEntity<ResultSuccessResponse> detail(
     return response.toResponse();
 }
 ```
+
+
+## Config
+
+You can take custom parameters from your `application.yml` file and map them to a class marked with `@ConfigurationProperties(prefix = <your config prefix>)` annotation.
+
+```yml
+config:
+  default-hello: "Hello World!"
+``` 
