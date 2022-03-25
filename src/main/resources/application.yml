@@ -8,3 +8,6 @@ server:
   error:
     include-exception: true
     include-message: always
+
+config:
+  default-hello: "Hello There Client!"

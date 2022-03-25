@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "a90aa997-c106-4ece-be24-45727f6e3711",
+		"name": "A1: Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/hello/name/John",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"hello",
+						"name",
+						"John"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Full Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/hello/fullName?firstName=John&lastName=Doe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"hello",
+						"fullName"
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "John"
+						},
+						{
+							"key": "lastName",
+							"value": "Doe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Favorite",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/hello/favorite?fullName=John Doe&shape=Cube&number=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"hello",
+						"favorite"
+					],
+					"query": [
+						{
+							"key": "fullName",
+							"value": "John Doe"
+						},
+						{
+							"key": "shape",
+							"value": "Cube"
+						},
+						{
+							"key": "number",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/hello/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"hello",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/number/detail/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"number",
+						"detail",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Cuboid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"length\": 10,\r\n    \"width\": 10,\r\n    \"height\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/number/cuboid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"number",
+						"cuboid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Distance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"start\": {\r\n        \"x\": 0,\r\n        \"y\": 0\r\n    },\r\n    \"end\": {\r\n        \"x\": 10,\r\n        \"y\": 10\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/number/distance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"number",
+						"distance"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
