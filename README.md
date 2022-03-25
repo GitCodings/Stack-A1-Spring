@@ -1,9 +1,9 @@
 # CS122B Activity 0 - Spring
 
-[Creating An Application](#creating-an-application)
-[Creating Endpoints](#creating-endpoints)
-[Result](#result)
-[Config](#config)
+- [Creating An Application](#creating-an-application)
+- [Creating Endpoints](#creating-endpoints)
+- [Result](#result)
+- [Config](#config)
 
 ## Creating An Application
 
