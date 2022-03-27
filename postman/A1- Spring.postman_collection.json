@@ -11,12 +11,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/hello",
+					"raw": "http://localhost:9091/hello",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"hello"
 					]
@@ -30,12 +30,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/hello/name/John",
+					"raw": "http://localhost:9091/hello/name/John",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"hello",
 						"name",
@@ -51,12 +51,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/hello/fullName?firstName=John&lastName=Doe",
+					"raw": "http://localhost:9091/hello/fullName?firstName=John&lastName=Doe",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"hello",
 						"fullName"
@@ -81,12 +81,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/hello/favorite?fullName=John Doe&shape=Cube&number=2",
+					"raw": "http://localhost:9091/hello/favorite?fullName=John Doe&shape=Cube&number=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"hello",
 						"favorite"
@@ -115,12 +115,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/hello/default",
+					"raw": "http://localhost:9091/hello/default",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"hello",
 						"default"
@@ -135,12 +135,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/number/detail/2",
+					"raw": "http://localhost:9091/number/detail/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"number",
 						"detail",
@@ -165,12 +165,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/number/cuboid",
+					"raw": "http://localhost:9091/number/cuboid",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"number",
 						"cuboid"
@@ -194,12 +194,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/number/distance",
+					"raw": "http://localhost:9091/number/distance",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "9091",
 					"path": [
 						"number",
 						"distance"
