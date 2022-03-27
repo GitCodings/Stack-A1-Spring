@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.activity.one.model.response;
+package com.github.klefstad_teaching.cs122b.spring.model.response;
 
 import com.github.klefstad_teaching.cs122b.core.base.ResponseModel;
 

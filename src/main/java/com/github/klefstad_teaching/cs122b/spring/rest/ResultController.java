@@ -1,6 +1,6 @@
-package com.github.klefstad_teaching.cs122b.activity.one.rest;
+package com.github.klefstad_teaching.cs122b.spring.rest;
 
-import com.github.klefstad_teaching.cs122b.activity.one.model.response.ResultSuccessResponse;
+import com.github.klefstad_teaching.cs122b.spring.model.response.ResultSuccessResponse;
 import com.github.klefstad_teaching.cs122b.core.error.ResultError;
 import com.github.klefstad_teaching.cs122b.core.result.BasicResults;
 import org.springframework.http.ResponseEntity;

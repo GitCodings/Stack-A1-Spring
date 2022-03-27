@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.activity.one.model.data;
+package com.github.klefstad_teaching.cs122b.spring.model.data;
 
 public class Point
 {

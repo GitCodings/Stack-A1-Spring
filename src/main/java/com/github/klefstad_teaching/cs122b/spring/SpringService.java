@@ -1,6 +1,6 @@
-package com.github.klefstad_teaching.cs122b.activity.one;
+package com.github.klefstad_teaching.cs122b.spring;
 
-import com.github.klefstad_teaching.cs122b.activity.one.config.SpringServiceConfig;
+import com.github.klefstad_teaching.cs122b.spring.config.SpringServiceConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

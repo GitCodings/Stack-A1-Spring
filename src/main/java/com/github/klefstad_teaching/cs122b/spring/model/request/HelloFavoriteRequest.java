@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.activity.one.model.request;
+package com.github.klefstad_teaching.cs122b.spring.model.request;
 
 /**
  * Spring can automatically convert queries into a pojo

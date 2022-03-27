@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.activity.one.model.response;
+package com.github.klefstad_teaching.cs122b.spring.model.response;
 
 public class DistanceResponse
 {

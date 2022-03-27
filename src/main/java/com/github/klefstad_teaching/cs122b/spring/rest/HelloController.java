@@ -1,7 +1,7 @@
-package com.github.klefstad_teaching.cs122b.activity.one.rest;
+package com.github.klefstad_teaching.cs122b.spring.rest;
 
-import com.github.klefstad_teaching.cs122b.activity.one.config.SpringServiceConfig;
-import com.github.klefstad_teaching.cs122b.activity.one.model.request.HelloFavoriteRequest;
+import com.github.klefstad_teaching.cs122b.spring.config.SpringServiceConfig;
+import com.github.klefstad_teaching.cs122b.spring.model.request.HelloFavoriteRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.http.HttpStatus;
