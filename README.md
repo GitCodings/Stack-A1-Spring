@@ -252,6 +252,7 @@ The annotations we will be using in this course that spring will create for us a
 - `@RestController`
 - `@ConfigurationProperties`
 - `@Component`
+
 While `@RestController` classes are automatically being used to create the endpoints, the other two `@ConfigurationProperties` and `@Component` are up to us to use as needed, and we can request them by using the `@Autowired` marked constructor in any class marked those three annotations
 
 For example take a 
