@@ -297,7 +297,10 @@ public class MathController
     private final Validate            validate;
     
     @Autowired
-    public HelloController(SpringServiceConfig config, Validate validate) // If validate was not marked as @Component this would not work 
+    public HelloController(
+            SpringServiceConfig config, 
+            Validate validate            // If validate was not marked as @Component this would not work 
+    ) 
     {
         this.config = config;
         this.validate = validate;
