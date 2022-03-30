@@ -247,21 +247,27 @@ public class SpringServiceConfig
 
 ## Autowired
 
-Spring will automatically create instances of classes with specific annotations for you when the application runs. The annotations we will be using in this course that spring will create for us are: `@RestController`, `@ConfigurationProperties`, and `@Component`. When spring creates these instances we can tell spring what this class depends on with the `@Autowired` annotation. For example:
+Spring will automatically create instances of classes with specific annotations for you when the application runs. \
+The annotations we will be using in this course that spring will create for us are: 
+- `@RestController`
+- `@ConfigurationProperties`
+- `@Component`
+While `@RestController` classes are automatically being used to create the endpoints, the other two `@ConfigurationProperties` and `@Component` are up to us to use as needed, and we can request them by using the `@Autowired` marked constructor in any class marked those three annotations
+
+For example take a 
 
 ```java
-@RestController
-public class HelloController
+@Component
+public Validate
 {
-    private final SpringServiceConfig config;
-    
-    @Autowired
-    public HelloController(SpringServiceConfig config)
+    public void validateNumber(int number)
     {
-        this.config = config;
+        if (number < 0) 
+            throw new ResultError(BasicResults.DATA_CONTAINS_INVALID_INTEGERS);
     }
 }
 ```
+
 
 ```java
 @ConstructorBinding
@@ -278,6 +284,22 @@ public class SpringServiceConfig
     public String getDefaultHello()
     {
         return defaultHello;
+    }
+}
+```
+
+```java
+@RestController
+public class MathController
+{
+    private final SpringServiceConfig config;
+    private final Validate            validate;
+    
+    @Autowired
+    public HelloController(SpringServiceConfig config, Validate validate) // If validate was not marked as @Component this would not work 
+    {
+        this.config = config;
+        this.validate = validate;
     }
 }
 ```
