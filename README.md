@@ -255,7 +255,7 @@ The annotations we will be using in this course that spring will create for us a
 
 While `@RestController` classes are automatically being used to create the endpoints, the other two `@ConfigurationProperties` and `@Component` are up to us to use as needed, and we can request them by using the `@Autowired` marked constructor in any class marked those three annotations
 
-For example take a 
+For example:
 
 ```java
 @Component
@@ -304,5 +304,3 @@ public class MathController
     }
 }
 ```
-
-Since this `HelloController` has the `@RestController` annotation and `SpringServiceConfig` has the `ConfigurationProperties` annotation, both of these classes will be created automatically, moreover since we marked `HelloController`'s constructor with `@Autowired` spring will be sure to create `SpringServiceConfig` first and "inject" this into the `HelloController` instance automatically when it is created. All the work of managing these instances and the order they are created is done for us, giving us more time to focus on the logic of the application rather that its setup.
