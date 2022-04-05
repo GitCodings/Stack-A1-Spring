@@ -1,8 +1,9 @@
 package com.github.klefstad_teaching.cs122b.spring.model.response;
 
-import com.github.klefstad_teaching.cs122b.core.base.ResponseModel;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.github.klefstad_teaching.cs122b.core.result.Result;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResultBasicResponse
 {
     private Result result;
