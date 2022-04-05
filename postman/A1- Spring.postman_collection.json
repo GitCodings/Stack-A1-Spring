@@ -207,6 +207,96 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Result Basic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/result/basic?numX=1&numY=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"result",
+						"basic"
+					],
+					"query": [
+						{
+							"key": "numX",
+							"value": "1"
+						},
+						{
+							"key": "numY",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/result/error?numX=-1&numY=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"result",
+						"error"
+					],
+					"query": [
+						{
+							"key": "numX",
+							"value": "-1"
+						},
+						{
+							"key": "numY",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result Extended",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/result/extended?numX=1&numY=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"result",
+						"extended"
+					],
+					"query": [
+						{
+							"key": "numX",
+							"value": "1"
+						},
+						{
+							"key": "numY",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [

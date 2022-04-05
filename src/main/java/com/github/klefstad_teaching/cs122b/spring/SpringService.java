@@ -1,11 +1,13 @@
 package com.github.klefstad_teaching.cs122b.spring;
 
+import com.github.klefstad_teaching.cs122b.core.spring.StackService;
 import com.github.klefstad_teaching.cs122b.spring.config.SpringServiceConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
+@StackService
 @EnableConfigurationProperties({
     SpringServiceConfig.class
 })
