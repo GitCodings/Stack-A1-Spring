@@ -169,6 +169,40 @@ public class MyApiController
 
 ## Result
 
+### Building your own Response Model
+
+Every endpoint will require creating and returning a JSON. All of these JSON's will have **at the very least** a single `Result` that describes the endpoints result. 
+
+```java
+package com.example.model.response;
+
+public class ResultSuccessResponse
+{
+    private Result result;
+    private Integer sum;
+    
+    //setters and getters
+}
+```
+
+```java
+package com.example.rest;
+
+@GetMapping("/result/sum")
+public ResponseEntity<ResultBasicResponse> detail(
+    @RequestParam("numX") Integer numX,
+    @RequestParam("numY") Integer numY)
+{
+    ResultBasicResponse response = new ResultBasicResponse()
+        .setResult(BasicResults.CALCULATION_SUCCESSFUL)
+        .setSum(numX + numY);
+
+    return ResponseEntity
+        .status(response.getResult().status())
+        .body(response);
+}
+```
+
 ### Exiting early
 
 In the cases where you need to exit early and the only thing that needs to be returned is a `Result` you can throw a `ResultError` with the correct `Result` as a argument and it will automatically return the correct `Result` and `HttpStatus` to the user.
@@ -179,14 +213,21 @@ This is made for our convience for this project.
 package com.example.rest;
 
 @GetMapping("/result/sum")
-public ResponseEntity<ResultSuccessResponse> detail(
+public ResponseEntity<ResultBasicResponse> detail(
     @RequestParam("numX") Integer numX,
     @RequestParam("numY") Integer numY)
 {
     if (numX < 0 || numY < 0) {
         throw new ResultError(BasicResults.DATA_CONTAINS_INVALID_INTEGERS);
     }
-    ...
+
+    ResultBasicResponse response = new ResultBasicResponse()
+        .setResult(BasicResults.CALCULATION_SUCCESSFUL)
+        .setSum(numX + numY);
+
+    return ResponseEntity
+        .status(response.getResult().status())
+        .body(response);
 }
 ```
 
