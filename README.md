@@ -203,7 +203,7 @@ public ResponseEntity<ResultBasicResponse> detail(
 }
 ```
 
-returns: 
+For `numX=1&numY=2` returns:
 ```json
 {
     "result": {
@@ -242,7 +242,7 @@ public ResponseEntity<ResultBasicResponse> detail(
 }
 ```
 
-returns: 
+For `numX=-1&numY=2` returns:
 ```json
 {
     "result": {
@@ -276,7 +276,7 @@ public ResponseEntity<ResultSuccessResponse> detail(
 }
 ```
 
-returns:
+For `numX=1&numY=2` returns:
 ```json
 {
     "result": {
