@@ -203,6 +203,17 @@ public ResponseEntity<ResultBasicResponse> detail(
 }
 ```
 
+returns: 
+```json
+{
+    "result": {
+        "code": 30,
+        "message": "Calculation successful"
+    },
+    "sum": 3
+}
+```
+
 ### Exiting early
 
 In the cases where you need to exit early and the only thing that needs to be returned is a `Result` you can throw a `ResultError` with the correct `Result` as a argument and it will automatically return the correct `Result` and `HttpStatus` to the user.
@@ -231,6 +242,16 @@ public ResponseEntity<ResultBasicResponse> detail(
 }
 ```
 
+returns: 
+```json
+{
+    "result": {
+        "code": 32,
+        "message": "Data contains invalid integers"
+    }
+}
+```
+
 ### Using ResponseModel
 
 Since all of our Responses will require a `Result` we can go ahead and just extend the provided `ResponseModel` abstract class which comes with the `Result` varaible and corrosponding getter and setter already implemented. This also comes with a convient `toResponse()` method that will automatically create a `ResponseEntity` with the `ResponseModel` as the body and the `HttpStatus` in `Result` as the status.
@@ -252,6 +273,17 @@ public ResponseEntity<ResultSuccessResponse> detail(
         .setSum(numX + numY);
 
     return response.toResponse();
+}
+```
+
+returns:
+```json
+{
+    "result": {
+        "code": 30,
+        "message": "Calculation successful"
+    },
+    "sum": 3
 }
 ```
 
