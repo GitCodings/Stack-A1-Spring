@@ -23,6 +23,8 @@ public class SpringService
 
 ## Creating Endpoints
 
+In Spring we map `HTTP Rest Calls` to `Endpoints` by creating methods inside of a class marked as `@RestController`
+
 ### Basic Endpoint
 
 ```java
