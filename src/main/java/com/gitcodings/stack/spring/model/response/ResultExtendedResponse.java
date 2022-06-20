@@ -1,6 +1,6 @@
-package com.github.klefstad_teaching.cs122b.spring.model.response;
+package com.gitcodings.stack.spring.model.response;
 
-import com.github.klefstad_teaching.cs122b.core.base.ResponseModel;
+import com.gitcodings.stack.core.base.ResponseModel;
 
 public class ResultExtendedResponse extends ResponseModel<ResultExtendedResponse>
 {

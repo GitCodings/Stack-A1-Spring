@@ -1,4 +1,4 @@
-# CS122B Activity 1 - Spring
+# Stack Activity 1 - Spring
 
 - [Creating An Application](#creating-an-application)
 - [Creating Endpoints](#creating-endpoints)

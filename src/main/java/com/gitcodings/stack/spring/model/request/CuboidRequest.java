@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.spring.model.request;
+package com.gitcodings.stack.spring.model.request;
 
 public class CuboidRequest
 {

@@ -1,11 +1,11 @@
-package com.github.klefstad_teaching.cs122b.spring.rest;
+package com.gitcodings.stack.spring.rest;
 
-import com.github.klefstad_teaching.cs122b.spring.model.data.Point;
-import com.github.klefstad_teaching.cs122b.spring.model.request.CuboidRequest;
-import com.github.klefstad_teaching.cs122b.spring.model.request.DistanceRequest;
-import com.github.klefstad_teaching.cs122b.spring.model.response.CuboidResponse;
-import com.github.klefstad_teaching.cs122b.spring.model.response.DetailResponse;
-import com.github.klefstad_teaching.cs122b.spring.model.response.DistanceResponse;
+import com.gitcodings.stack.spring.model.request.CuboidRequest;
+import com.gitcodings.stack.spring.model.data.Point;
+import com.gitcodings.stack.spring.model.request.DistanceRequest;
+import com.gitcodings.stack.spring.model.response.CuboidResponse;
+import com.gitcodings.stack.spring.model.response.DetailResponse;
+import com.gitcodings.stack.spring.model.response.DistanceResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

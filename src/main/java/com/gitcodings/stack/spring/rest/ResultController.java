@@ -1,9 +1,9 @@
-package com.github.klefstad_teaching.cs122b.spring.rest;
+package com.gitcodings.stack.spring.rest;
 
-import com.github.klefstad_teaching.cs122b.core.error.ResultError;
-import com.github.klefstad_teaching.cs122b.core.result.BasicResults;
-import com.github.klefstad_teaching.cs122b.spring.model.response.ResultBasicResponse;
-import com.github.klefstad_teaching.cs122b.spring.model.response.ResultExtendedResponse;
+import com.gitcodings.stack.spring.model.response.ResultExtendedResponse;
+import com.gitcodings.stack.core.error.ResultError;
+import com.gitcodings.stack.core.result.BasicResults;
+import com.gitcodings.stack.spring.model.response.ResultBasicResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

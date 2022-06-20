@@ -1,6 +1,6 @@
-package com.github.klefstad_teaching.cs122b.spring.model.request;
+package com.gitcodings.stack.spring.model.request;
 
-import com.github.klefstad_teaching.cs122b.spring.model.data.Point;
+import com.gitcodings.stack.spring.model.data.Point;
 
 public class DistanceRequest
 {

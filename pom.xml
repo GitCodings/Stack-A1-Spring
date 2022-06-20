@@ -12,19 +12,19 @@
     </repositories>
 
     <parent>
-        <groupId>com.github.klefstad-teaching</groupId>
-        <artifactId>CS122B-Parent</artifactId>
-        <version>1.0.2</version>
+        <groupId>com.gitcodings.stack</groupId>
+        <artifactId>stack-parent</artifactId>
+        <version>1.2.0</version>
     </parent>
 
-    <artifactId>cs122b-a1-spring</artifactId>
-    <name>CS122B Activity 1: Spring</name>
+    <artifactId>stack-a1-spring</artifactId>
+    <name>Stack Activity 1: Spring</name>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.klefstad-teaching</groupId>
-            <artifactId>CS122B-Core</artifactId>
-            <version>1.0.2</version>
+            <groupId>com.gitcodings.stack</groupId>
+            <artifactId>stack-core</artifactId>
+            <version>1.2.0</version>
         </dependency>
 
         <dependency>
@@ -65,7 +65,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <groupId>org.springframework.boot</groupId>
                 <configuration>
-                    <mainClass>com.github.klefstad_teaching.cs122b.spring.SpringService</mainClass>
+                    <mainClass>com.gitcodings.stack.spring.SpringService</mainClass>
                 </configuration>
             </plugin>
         </plugins>
