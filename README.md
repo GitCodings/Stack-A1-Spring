@@ -99,11 +99,11 @@ package com.example.model.request;
 
 public class PojoRequestModel
 {
-    private Integer name;
+    private String name;
     
-    public Integer getName() { return name; }
+    public String getName() { return name; }
     
-    public void setName(Integer name) { this.name = name; }
+    public void setName(String name) { this.name = name; }
     
 }
 ```
@@ -136,11 +136,11 @@ package com.example.model.response;
 
 public class PojoResponseModel
 {
-    private Integer name;
+    private String name;
     
-    public Integer getName() { return name; }
+    public String getName() { return name; }
     
-    public void setName(Integer name) { this.name = name; }
+    public void setName(String name) { this.name = name; }
     
 }
 ```
